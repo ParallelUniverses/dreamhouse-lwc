@@ -1,5 +1,5 @@
-@JsonAccess(serializable='samePackage' deserializable=’sameNamespace’)
-public class FileUtilities {
+@JsonAccess(serializable='samePackage' deserializable=sameNamespace)
+public inherited sharing class FileUtilities {
 
     @AuraEnabled
     public static String createFile(
