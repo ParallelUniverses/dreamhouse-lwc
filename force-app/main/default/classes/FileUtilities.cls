@@ -1,4 +1,4 @@
-public class FileUtilities {
+public inherited sharing class FileUtilities {
 
     @AuraEnabled
     public static String createFile(
