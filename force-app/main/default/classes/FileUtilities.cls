@@ -1,3 +1,4 @@
+@JsonAccess(serializable='samePackage' deserializable=’sameNamespace’)
 public class FileUtilities {
 
     @AuraEnabled
