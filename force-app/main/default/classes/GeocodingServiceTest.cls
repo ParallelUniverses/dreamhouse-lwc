@@ -1,3 +1,7 @@
+/**
+ * Geocoding test class
+ */
+
 @isTest
 private with sharing class GeocodingServiceTest {
     private static final String STREET = 'Camino del Jueves 26';
