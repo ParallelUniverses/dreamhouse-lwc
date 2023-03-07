@@ -58,7 +58,7 @@ public class GeocodingService {
             contentVersion.Title = filename;
             contentVersion.PathOnClient = filename;
             insert contentVersion;
-            String soql = 'SELECT ContentDocumentId FROM ContentVersion WHERE Id = ' + recordId + ';';
+            String soql = 'SELECT ContentDocumentId FROM ContentVersion WHERE Id = \'' + recordId + '\'';
             contentVersion = Database.query(soql);
             ContentDocumentLink contentDocumentLink = new ContentDocumentLink();
             contentDocumentLink.ContentDocumentId = contentVersion.ContentDocumentId;
