@@ -1,6 +1,12 @@
+/**
+ * Generic unit tests for file utilities
+ * @author Lorenzo
+ * @version 1.0
+ */
+
 @isTest
 private with sharing class FileUtilitiesTest {
-    
+
     @isTest
     static void createFileSucceedsWhenCorrectInput() {
         // GIVEN

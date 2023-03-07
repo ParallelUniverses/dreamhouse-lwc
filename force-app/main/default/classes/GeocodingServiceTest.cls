@@ -1,3 +1,9 @@
+/**
+ * Generic unit tests for geocoding service
+ * @author Lorenzo
+ * @version 1.0
+ */
+
 @isTest
 private with sharing class GeocodingServiceTest {
     private static final String STREET = 'Camino del Jueves 26';
@@ -7,7 +13,7 @@ private with sharing class GeocodingServiceTest {
     private static final String COUNTRY = 'Spain';
     private static final Decimal LATITUDE = 3.123;
     private static final Decimal LONGITUDE = 31.333;
-    private static final Decimal CONTINENT = 'America';
+    private static final Decimal CONTINENT = '31.333';
 
     @isTest
     static void successResponse() {
