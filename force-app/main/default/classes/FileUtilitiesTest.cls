@@ -25,7 +25,7 @@ private with sharing class FileUtilitiesTest {
         );
 
         // THEN
-        Assert.isNotNull(contentDocumentLinkId);
+        Assert.isNotNull(contentDocumentLinkId, 'Assert that contentDocumentLinkId is not null.');
     }
 
     @isTest
