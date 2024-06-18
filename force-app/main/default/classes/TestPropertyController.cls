@@ -67,7 +67,7 @@ private class TestPropertyController {
                 1
             );
             Test.stopTest();
-            Assert.areEqual(5, result.records.size());
+            Assert.areEqual(5, result.records.size(), 'Asserts that the number of records in the result set is equal to 5.');
         }
     }
 
@@ -82,7 +82,7 @@ private class TestPropertyController {
         );
         Test.stopTest();
 
-        Assert.isNull(items);
+        Assert.isNull(items, 'Assert that items is null.');
     }
 
     @isTest
@@ -115,7 +115,7 @@ private class TestPropertyController {
         );
         Test.stopTest();
 
-        Assert.areEqual(1, items.size());
-        Assert.areEqual(MOCK_PICTURE_NAME, items[0].Title);
+        Assert.areEqual(1, items.size(), 'Asserts that the size of the collection is equal to 1.');
+        Assert.areEqual(MOCK_PICTURE_NAME, items[0].Title, 'Checks that the first item is the music player.');
     }
 }
