@@ -73,7 +73,7 @@ public with sharing class PropertyController {
             WITH USER_MODE
             ORDER BY Price__c
             LIMIT :safePageSize
-            OFFSET :offset
+//            OFFSET :offset
         ];
         return result;
     }
@@ -83,6 +83,7 @@ public with sharing class PropertyController {
      * @param propertyId Property Id
      * @return List of ContentVersion holding the pictures
      */
+    /*
     @AuraEnabled(cacheable=true scope='global')
     public static List<ContentVersion> getPictures(Id propertyId) {
         List<ContentDocumentLink> links = [
@@ -112,4 +113,5 @@ public with sharing class PropertyController {
             ORDER BY CreatedDate
         ];
     }
+    */
 }
