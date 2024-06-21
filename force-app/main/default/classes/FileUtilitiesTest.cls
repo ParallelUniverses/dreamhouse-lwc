@@ -18,7 +18,7 @@ private with sharing class FileUtilitiesTest {
         );
 
         // THEN
-        Assert.isNotNull(contentDocumentLinkId);
+        Assert.isNotNull(contentDocumentLinkId, 'Assert that contentDocumentLinkId is not null.');
     }
 
     @isTest
@@ -38,7 +38,7 @@ private with sharing class FileUtilitiesTest {
             Assert.fail('Expected an AuraHandledException');
         } catch (Exception e) {
             // THEN
-            Assert.isInstanceOfType(e, AuraHandledException.class);
+            Assert.isInstanceOfType(e, AuraHandledException.class, 'Assert that e is an AuraHandledException.');
         }
     }
 
@@ -62,7 +62,7 @@ private with sharing class FileUtilitiesTest {
             Assert.fail('Expected an AuraHandledException');
         } catch (Exception e) {
             // THEN
-            Assert.isInstanceOfType(e, AuraHandledException.class);
+            Assert.isInstanceOfType(e, AuraHandledException.class, 'Assert that e is an AuraHandledException.');
         }
     }
 
@@ -86,7 +86,7 @@ private with sharing class FileUtilitiesTest {
             Assert.fail('Expected an AuraHandledException');
         } catch (Exception e) {
             // THEN
-            Assert.isInstanceOfType(e, AuraHandledException.class);
+            Assert.isInstanceOfType(e, AuraHandledException.class, 'Assert that e is an AuraHandledException.');
         }
     }
 }
