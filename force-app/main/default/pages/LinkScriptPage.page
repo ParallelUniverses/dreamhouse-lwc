@@ -1,0 +1,6 @@
+<apex:page Standardcontroller="Quote__c" sidebar="false" extensions="AN_r1_QuoteController" id="pg">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.multiselect,'jquery-ui.css')}" />
+        <script type="text/javascript" src="{!URLFOR($Resource.multiselect,'jquery.js')}" />
+    </head>
+</apex:page>
