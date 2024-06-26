@@ -80,6 +80,7 @@ private with sharing class GeocodingServiceTest {
     }
 
     public class OpenStreetMapHttpCalloutMockImpl implements HttpCalloutMock {
+        /* Respond to the request with a 200 OK status. */
         public HTTPResponse respond(HTTPRequest req) {
             HttpResponse res = new HttpResponse();
             res.setHeader('Content-Type', 'application/json');
@@ -90,6 +91,7 @@ private with sharing class GeocodingServiceTest {
     }
 
     public class OpenStreetMapHttpCalloutMockImplError implements HttpCalloutMock {
+        /* Respond to the request with status code 400. */
         public HTTPResponse respond(HTTPRequest req) {
             HttpResponse res = new HttpResponse();
             res.setHeader('Content-Type', 'application/json');
