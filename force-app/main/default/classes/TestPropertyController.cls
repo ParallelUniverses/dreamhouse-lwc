@@ -2,6 +2,7 @@
 private class TestPropertyController {
     private final static String MOCK_PICTURE_NAME = 'MockPictureName';
 
+    /* Creates a list of properties. */
     public static void createProperties(Integer amount) {
         List<Property__c> properties = new List<Property__c>();
         for (Integer i = 0; i < amount; i++) {
